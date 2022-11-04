@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(cors())
 
-const port = process.env.Node_env || 3600;
+const port = process.env.PORT || 3600;
 
 mongoose.connect(mongoDbCluster, {
   useNewUrlParser: true,
